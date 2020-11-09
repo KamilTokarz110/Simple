@@ -103,7 +103,7 @@ html {
   text-decoration: none;
 }
 
-.main__about {
+.main .main__about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +120,7 @@ html {
   background-position: 96px 0%;
 }
 
-.main__about .main__navigation-fixed {
+.main .main__about .main__navigation-fixed {
   position: relative;
   position: absolute;
   display: -webkit-box;
@@ -136,12 +136,12 @@ html {
   background-color: white;
 }
 
-.main__about .main__navigation-fixed .menu-fixed__arrow {
+.main .main__about .main__navigation-fixed .menu-fixed__arrow {
   position: absolute;
   right: 10px;
 }
 
-.main__about .main__navigation-fixed .navigation-fixed__menu-fixed {
+.main .main__about .main__navigation-fixed .menu-fixed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,33 +150,33 @@ html {
           align-items: center;
 }
 
-.main__about .main__navigation-fixed .menu-fixed__list {
+.main .main__about .main__navigation-fixed .menu-fixed__list {
   height: 649px;
   list-style: none;
   width: 123px;
 }
 
-.main__about .main__navigation-fixed .menu-fixed__list .menu-fixed__title {
+.main .main__about .main__navigation-fixed .menu-fixed__title {
   padding-bottom: 24px;
   padding-left: 10px;
   border-bottom: dotted 2px black;
 }
 
-.main__about .main__navigation-fixed .menu-fixed__list .menu-fixed__item {
+.main .main__about .main__navigation-fixed .menu-fixed__item {
   font-size: 2rem;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.main__about .main__navigation-fixed .menu-fixed__list .menu-fixed__item:nth-last-of-type(3) {
+.main .main__about .main__navigation-fixed .menu-fixed__item:nth-last-of-type(3) {
   border-bottom: dotted 2px black;
 }
 
-.main__about .main__navigation-fixed .menu-fixed__list .menu-fixed__item .menu-item__social {
+.main .main__about .main__navigation-fixed .menu-fixed__social {
+  margin-top: 10px;
   cursor: pointer;
-  color: #313748;
 }
 
-.main__about .main__navigation-fixed .menu-fixed__list .menu-fixed__item .menu-fixed__link {
+.main .main__about .main__navigation-fixed .menu-fixed__link {
   display: block;
   color: #313748;
   text-align: left;
@@ -184,7 +184,7 @@ html {
   cursor: pointer;
 }
 
-.main__about .main__navigation-fixed .menu-fixed__list .menu-fixed__item .menu-fixed__link--dotted {
+.main .main__about .main__navigation-fixed .menu-fixed__link--dotted {
   border-bottom: 2px dotted black;
 }
 /*# sourceMappingURL=style.css.map */
