@@ -1,0 +1,19 @@
+html {
+    font-size: 10px;
+    font-family: $special-font;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #023A5C;
+}
+
+.content {
+    margin: 0 auto;
+    width: 1000px;
+}
