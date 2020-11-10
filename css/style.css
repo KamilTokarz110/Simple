@@ -588,7 +588,7 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 445px;
+  height: 340px;
   margin-top: 62px;
 }
 
@@ -630,7 +630,7 @@ html {
 }
 
 .services__description {
-  height: 484px;
+  height: 331px;
 }
 
 .services__text {
@@ -643,5 +643,91 @@ html {
           column-gap: 27px;
   margin-top: 75px;
   line-height: 25px;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 987px;
+  width: 100%;
+  background-color: white;
+}
+
+.news__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 162px;
+  border-bottom: dotted 2px #023A5C;
+}
+
+.news__image {
+  margin-right: 14px;
+}
+
+.news__title {
+  color: #023A5C;
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.news__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: yellow;
+  height: 500px;
+}
+
+.news__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 365px;
+  width: 190px;
+  background-color: red;
+}
+
+.news__item--arrow {
+  width: 26px;
+  height: 42px;
+}
+
+.news__item:nth-child(2) {
+  background-color: royalblue;
+}
+
+.news__item:nth-child(3) {
+  background-color: gray;
+}
+
+.news__item:nth-child(4) {
+  background-color: black;
+}
+
+.news__item:nth-child(6) {
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */
