@@ -101,12 +101,83 @@
                 }
             }
 
-            .one {
+            .about__content__newsletter {
                 position: absolute;
+                display: flex;
+                flex-direction: column;
                 bottom: 0;
                 width: 100%;
-                height: 130px;
-                background-color: blue;
+                height: 81px;
+                margin-bottom: 35px;
+
+
+                .newsletter__rectangle {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                    height: 15px;
+                    margin-bottom: 15px;
+
+
+                    .rectangle__item {
+                        margin-left: 10px;
+                        width: 38px;
+                        height: 15px;
+                        border: 1px solid #707070;
+
+                        &--active {
+                            background-color: $main-color;
+                        }
+                    }
+                }
+
+                .row {
+                    display: flex;
+                }
+
+
+
+                .newsletter__form {
+                    background-color: white;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 855px;
+                    height: 100%;
+
+                    &__image {
+                        margin-left: 12px;
+                    }
+
+                    &__text {
+                        // margin-left: 25px;
+                        text-align: center;
+                        font-size: 2rem;
+                        width: 359px;
+                        height: 27px;
+                    }
+
+                    &__email {
+                        width: 371px;
+                        height: 31px;
+                        margin-right: 11px;
+
+                    }
+
+                    &__button {
+                        background-color: white;
+                        width: 133px;
+                        height: 55px;
+                        border: none;
+                        margin-left: auto;
+                        font-size: 2rem;
+                        font-weight: lighter;
+                        font-family: $special-font;
+                        color: $main-color;
+
+                    }
+                }
             }
 
         }
