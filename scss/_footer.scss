@@ -21,6 +21,8 @@
         padding: 55px;
 
         .arrow__image {
+            cursor: pointer;
+
             &--rotated {
                 transform: rotate(180deg);
                 margin-left: auto;

@@ -124,6 +124,8 @@ html {
   height: 890px;
   background-image: url(../images/bgc_main.png);
   background-position: 96px 0%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main .main__about .about__content {
@@ -253,7 +255,7 @@ html {
 
 .main .main__about .main__navigation-fixed {
   position: relative;
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,12 +269,30 @@ html {
   background-color: white;
   -webkit-box-shadow: 3px 0px 6px #000000;
           box-shadow: 3px 0px 6px #000000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .main__about .main__navigation-fixed--active {
+  top: 0;
+  left: -170px;
+  height: 1020px;
+}
+
+.main .main__about .main__navigation-fixed--scrolled {
+  top: 0;
+  height: 100%;
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__arrow {
   position: absolute;
   right: 10px;
   cursor: pointer;
+}
+
+.main .main__about .main__navigation-fixed .menu-fixed__arrow--active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed {
@@ -1102,6 +1122,10 @@ html {
   display: -ms-flexbox;
   display: flex;
   padding: 55px;
+}
+
+.footer__arrow .arrow__image {
+  cursor: pointer;
 }
 
 .footer__arrow .arrow__image--rotated {

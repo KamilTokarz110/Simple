@@ -80,6 +80,13 @@
         background-image: url(../images/bgc_main.png);
         background-position: 96px 0%;
 
+        transition: 0.5s;
+
+        // &--active {
+        //     background-position: center;
+        //     background-size: cover;
+        // }
+
         .about__content {
             position: relative;
             display: flex;
@@ -202,7 +209,7 @@
 
         .main__navigation-fixed {
             position: relative;
-            position: absolute;
+            position: fixed;
             display: flex;
             justify-content: center;
             top: 88px;
@@ -211,11 +218,29 @@
             width: 212px;
             background-color: white;
             box-shadow: 3px 0px 6px #000000;
+            transition: 0.5s;
+
+            &--active {
+                top: 0;
+                left: -170px;
+                height: 1020px;
+            }
+
+            &--scrolled {
+                top: 0;
+                height: 100%;
+            }
 
             .menu-fixed__arrow {
                 position: absolute;
                 right: 10px;
                 cursor: pointer;
+
+                &--active {
+                    // height: 100%;
+                    transform: rotate(180deg);
+                    // background-color: $main-color;
+                }
             }
 
             .menu-fixed {
@@ -242,16 +267,8 @@
 
                 &__item {
                     font-size: 2rem;
-
                     line-height: 33px;
 
-
-
-
-                    &:nth-last-of-type(3) {
-                        // border-bottom: dotted 2px black;
-                        // padding-bottom: 20px;
-                    }
                 }
 
                 .menu-fixed__item--line {
@@ -260,8 +277,6 @@
                     color: #fff;
                     background-color: #fff;
                     height: 1px;
-                    // margin: 25px 0;
-                    // width: 51px;
                 }
 
 
@@ -278,15 +293,6 @@
                     text-align: left;
                     text-decoration: none;
                     cursor: pointer;
-
-
-
-                    &--dotted {
-                        // border-bottom: 2px dotted black;
-                        // padding-bottom: 20px;
-
-                    }
-
 
                 }
             }
