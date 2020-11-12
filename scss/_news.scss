@@ -28,7 +28,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: yellow;
+        // background-color: yellow;
         height: 500px;
 
     }
@@ -38,27 +38,61 @@
         flex-direction: column;
         height: 365px;
         width: 190px;
-        background-color: red;
+        color: $main-color;
+        font-weight: 300;
+        font-size: 1.4rem;
+
+        &-image {
+            &--rotate {
+                color: white;
+                width: 100%;
+                transform: rotate(180deg);
+
+            }
+        }
+
+        .item__info {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-basis: 50%;
+
+
+
+
+            .info__title {
+                text-transform: uppercase;
+            }
+
+            .info__link {
+                // display: block;
+
+
+                text-decoration: none;
+            }
+
+            .info__text {
+                padding-bottom: 15px;
+            }
+
+            .info__line {
+                border: none;
+                border-top: 1px dotted $main-color;
+                color: #fff;
+                background-color: #fff;
+                height: 1px;
+                width: 51px;
+            }
+
+        }
 
         &--arrow {
             width: 26px;
             height: 42px;
         }
 
-        &:nth-child(2) {
-            background-color: royalblue;
-        }
 
-        &:nth-child(3) {
-            background-color: gray;
-        }
 
-        &:nth-child(4) {
-            background-color: black;
-        }
-
-        &:nth-child(6) {
-            background-color: black;
-        }
     }
 }

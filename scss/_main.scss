@@ -128,11 +128,13 @@
                     margin-bottom: 15px;
 
 
+
                     .rectangle__item {
                         margin-left: 10px;
                         width: 38px;
                         height: 15px;
                         border: 1px solid #707070;
+                        cursor: pointer;
 
                         &--active {
                             background-color: $main-color;
@@ -160,7 +162,7 @@
                     }
 
                     &__text {
-                        // margin-left: 25px;
+
                         text-align: center;
                         font-size: 2rem;
                         width: 359px;
@@ -184,6 +186,7 @@
                         font-weight: lighter;
                         font-family: $special-font;
                         color: $main-color;
+                        cursor: pointer;
 
                     }
                 }
