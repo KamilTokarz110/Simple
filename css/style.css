@@ -761,4 +761,309 @@ html {
   width: 26px;
   height: 42px;
 }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 976px;
+  width: 100%;
+  background-color: #023A5C;
+}
+
+.contact__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 170px;
+  border-bottom: dotted 2px white;
+}
+
+.contact__image {
+  margin-right: 18px;
+}
+
+.contact__title {
+  font-weight: 300;
+  font-size: 2.9rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.contact__branch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 270px;
+  border-bottom: dotted 2px white;
+}
+
+.contact__branch .branch__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 181px;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: white;
+}
+
+.contact .submit__return {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55px;
+}
+
+.contact .submit__return .return__link {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+.contact__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 474px;
+  border-bottom: dotted 2px white;
+}
+
+.contact__submit .submit__send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  width: 413px;
+  color: white;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+.contact__submit .submit__send .send__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__submit .submit__send .send__form .form__title {
+  margin-bottom: 25px;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.contact__submit .submit__send .send__form .form__input {
+  margin-bottom: 14px;
+  width: 100%;
+  height: 32px;
+  padding-left: 10px;
+}
+
+.contact__submit .submit__send .send__form .form__input::-webkit-input-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: right;
+}
+
+.contact__submit .submit__send .send__form .form__input:-ms-input-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: right;
+}
+
+.contact__submit .submit__send .send__form .form__input::-ms-input-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: right;
+}
+
+.contact__submit .submit__send .send__form .form__input::placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: right;
+}
+
+.contact__submit .submit__send .send__form .form__text-area {
+  margin-bottom: 14px;
+  width: 100%;
+  height: 86px;
+  resize: none;
+}
+
+.contact__submit .submit__send .send__form .form__text-area::-webkit-input-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: right;
+}
+
+.contact__submit .submit__send .send__form .form__text-area:-ms-input-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: right;
+}
+
+.contact__submit .submit__send .send__form .form__text-area::-ms-input-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: right;
+}
+
+.contact__submit .submit__send .send__form .form__text-area::placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: right;
+}
+
+.contact__submit .submit__send .form__checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  width: 295px;
+}
+
+.contact__submit .submit__send .form__checkboxes .checkboxes__text {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.contact__submit .submit__send .form__checkboxes .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__submit .submit__send .form__checkboxes .item--right {
+  margin-left: auto;
+}
+
+.contact__submit .submit__send .form__checkboxes .form__checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.contact__submit .submit__send .form__button {
+  font-family: "Libre Franklin", sans-serif;
+  width: 117px;
+  height: 52px;
+  border: none;
+}
+
+.contact__submit .submit__social {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 385px;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contact__submit .submit__info {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  width: 216px;
+  height: 385px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 300;
+}
+
+.contact__submit .submit__info .wrap {
+  height: 241px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.contact__submit .submit__info .info__title {
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
