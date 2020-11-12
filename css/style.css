@@ -1066,4 +1066,46 @@ html {
 .contact__submit .submit__info .info__title {
   text-transform: uppercase;
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 145px;
+  width: 100%;
+  background-color: white;
+}
+
+.footer__company__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.footer__arrow {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 55px;
+}
+
+.footer__arrow .arrow__image--rotated {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: auto;
+}
 /*# sourceMappingURL=style.css.map */
