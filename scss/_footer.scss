@@ -10,22 +10,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // background-color: royalblue;
+
         width: 100%;
     }
 
     &__arrow {
-        // justify-self: flex-end;
-        // background-color: red;
-        // margin-left: auto;
+
         width: 20%;
         display: flex;
         padding: 55px;
-
-
-
-        // margin-right: 0 auto;
-
 
         .arrow__image {
             &--rotated {

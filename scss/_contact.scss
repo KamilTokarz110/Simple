@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
     height: 976px;
     width: 100%;
     background-color: $main-color;
@@ -70,31 +68,23 @@
         align-items: center;
         justify-content: center;
         height: 474px;
-        // align-items: stretch;
-        // justify-content: stretch;
         border-bottom: dotted 2px white;
-        // background-color: yellow;
 
 
 
 
         .submit__send {
             display: flex;
-            // flex-direction: column;
-            // justify-content: space-between;
             align-items: center;
-
             flex: 4;
             width: 413px;
-            // height: 385px;
-            // background-color: red;
             color: white;
             font-weight: 300;
             font-size: 1.7rem;
 
             .send__form {
                 display: flex;
-                // flex-direction: column;
+
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-between;
@@ -141,7 +131,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
-                // background-color: yellow;
                 height: 56px;
                 width: 295px;
 
@@ -159,14 +148,11 @@
                         margin-left: auto;
                     }
 
-                    // justify-content: center;
-                    // align-items: center;
                 }
 
                 .form__checkbox {
                     width: 20px;
                     height: 20px;
-                    // margin-top: auto;
                     margin-right: 12px;
 
 
@@ -178,6 +164,7 @@
                 width: 117px;
                 height: 52px;
                 border: none;
+                background-color: white;
             }
         }
 
@@ -192,19 +179,14 @@
             font-size: 1.7rem;
             font-weight: 300;
             text-transform: uppercase;
-            // width: 113px;
-            // height: 385px;
-            // background-color: #fff;
         }
 
         .submit__info {
             flex: 2;
             width: 216px;
             height: 385px;
-            // align-self: flex-start;
             display: flex;
             flex-direction: column;
-            // justify-content: space-between;
             font-size: 1.7rem;
             color: white;
             font-weight: 300;
@@ -218,12 +200,9 @@
             }
 
             .info__title {
-                // margin-top: 15px;
                 text-transform: uppercase;
             }
 
-
-            // background-color: yellow;
         }
     }
 }

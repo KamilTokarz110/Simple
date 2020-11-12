@@ -265,13 +265,14 @@ html {
   height: 889px;
   width: 212px;
   background-color: white;
-  -webkit-box-shadow: 3px 5.2px 6px #000000;
-          box-shadow: 3px 5.2px 6px #000000;
+  -webkit-box-shadow: 3px 0px 6px #000000;
+          box-shadow: 3px 0px 6px #000000;
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__arrow {
   position: absolute;
   right: 10px;
+  cursor: pointer;
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed {
@@ -290,19 +291,20 @@ html {
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__title {
-  padding-bottom: 20px;
   padding-left: 10px;
-  border-bottom: dotted 2px black;
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__item {
   font-size: 2rem;
-  margin-bottom: 8px;
+  line-height: 33px;
 }
 
-.main .main__about .main__navigation-fixed .menu-fixed__item:nth-last-of-type(3) {
-  border-bottom: dotted 2px black;
-  padding-bottom: 20px;
+.main .main__about .main__navigation-fixed .menu-fixed .menu-fixed__item--line {
+  border: none;
+  border-top: 1px dotted #023A5C;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__social {
@@ -316,11 +318,6 @@ html {
   text-align: left;
   text-decoration: none;
   cursor: pointer;
-}
-
-.main .main__about .main__navigation-fixed .menu-fixed__link--dotted {
-  border-bottom: 2px dotted black;
-  padding-bottom: 20px;
 }
 
 .industries {
@@ -595,6 +592,9 @@ html {
 }
 
 .services__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1004,6 +1004,7 @@ html {
   width: 117px;
   height: 52px;
   border: none;
+  background-color: white;
 }
 
 .contact__submit .submit__social {
