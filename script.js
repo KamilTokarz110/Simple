@@ -9,7 +9,7 @@ arrow.addEventListener("click",function(){
     mainSection.classList.toggle("main__about--active");
 });
 const sectionOneOptions = {
-    rootMargin: "-930px 0px 0px 0px"
+    rootMargin: "-800px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(

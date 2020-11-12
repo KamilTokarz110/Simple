@@ -44,6 +44,13 @@ html {
   background-color: transparent;
 }
 
+@media (max-width: 786px) {
+  .main .main {
+    width: 768px;
+    height: 602px;
+  }
+}
+
 .main__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,6 +65,12 @@ html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (max-width: 786px) {
+  .main__header .header__search {
+    display: none;
+  }
 }
 
 .main__header .menu__content {
@@ -76,12 +89,27 @@ html {
   background-color: white;
 }
 
+@media (max-width: 768px) {
+  .main__header .menu__content .menu__logo {
+    width: 117px;
+    height: 87px;
+  }
+}
+
 .main__header .menu__content .menu__logo__image {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .main__header .menu__content .menu__logo__image {
+    background-image: url(../images/main_simple_768.png);
+    background-size: cover;
+    width: 80%;
+  }
 }
 
 .main__header .menu__content .menu {
@@ -106,6 +134,13 @@ html {
   margin: 0 18px;
 }
 
+@media (max-width: 768px) {
+  .main__header .menu__content .menu__item {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
 .main__header .menu__content .menu__link {
   display: block;
   color: white;
@@ -128,6 +163,15 @@ html {
   transition: 0.5s;
 }
 
+@media (max-width: 768px) {
+  .main .main__about {
+    background-image: url(../images/main_bg_768.png);
+    background-position: center;
+    width: 100%;
+    height: 445px;
+  }
+}
+
 .main .main__about .about__content {
   position: relative;
   display: -webkit-box;
@@ -139,6 +183,13 @@ html {
           flex-direction: column;
   height: 100%;
   text-shadow: 3px 5.2px 6px #000000;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .about__content {
+    height: 100%;
+    width: 568px;
+  }
 }
 
 .main .main__about .about__content__title {
@@ -153,6 +204,24 @@ html {
 }
 
 .main .main__about .about__content__title-text {
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .about__content__title {
+    position: absolute;
+    top: 30%;
+    right: -30%;
+    margin-right: 32px;
+    color: white;
+    font-weight: 300;
+    width: 420px;
+    height: 84px;
+    font-size: 3.2rem;
+  }
+}
+
+.main .main__about .about__content__title-text {
   font-weight: 300;
 }
 
@@ -160,6 +229,12 @@ html {
   font-size: 2.4rem;
   text-align: right;
   margin-right: 90px;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .about__content__title-bottom {
+    display: none;
+  }
 }
 
 .main .main__about .about__content .about__content__newsletter {
@@ -176,6 +251,14 @@ html {
   height: 81px;
 }
 
+@media (max-width: 768px) {
+  .main .main__about .about__content .about__content__newsletter {
+    height: 40px;
+    width: 693px;
+    bottom: 9%;
+  }
+}
+
 .main .main__about .about__content .about__content__newsletter .newsletter__rectangle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,6 +269,12 @@ html {
   width: 100%;
   height: 15px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .about__content .about__content__newsletter .newsletter__rectangle {
+    display: none;
+  }
 }
 
 .main .main__about .about__content .about__content__newsletter .newsletter__rectangle .rectangle__item {
@@ -223,6 +312,13 @@ html {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .main .main__about .about__content .about__content__newsletter .newsletter__form {
+    width: 484px;
+    height: 40px;
+  }
+}
+
 .main .main__about .about__content .about__content__newsletter .newsletter__form__image {
   margin-left: 12px;
 }
@@ -234,10 +330,34 @@ html {
   height: 27px;
 }
 
+@media (max-width: 768px) {
+  .main .main__about .about__content .about__content__newsletter .newsletter__form__text {
+    display: none;
+  }
+}
+
+.main .main__about .about__content .about__content__newsletter .newsletter__form__text--medium {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .about__content .about__content__newsletter .newsletter__form__text--medium {
+    display: block;
+  }
+}
+
 .main .main__about .about__content .about__content__newsletter .newsletter__form__email {
   width: 371px;
   height: 31px;
   margin-right: 11px;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .about__content .about__content__newsletter .newsletter__form__email {
+    width: 287px;
+    height: 23px;
+    margin-right: 11px;
+  }
 }
 
 .main .main__about .about__content .about__content__newsletter .newsletter__form__button {
@@ -251,6 +371,15 @@ html {
   font-family: "Libre Franklin", sans-serif;
   color: #023A5C;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .about__content .about__content__newsletter .newsletter__form__button {
+    width: 100px;
+    height: 41px;
+    margin-left: 10px;
+    font-size: 1.6rem;
+  }
 }
 
 .main .main__about .main__navigation-fixed {
@@ -271,12 +400,30 @@ html {
           box-shadow: 3px 0px 6px #000000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .main__navigation-fixed {
+    position: relative;
+    top: 88px;
+    left: 0px;
+    z-index: 1;
+    height: 497px;
+    width: 117px;
+  }
 }
 
 .main .main__about .main__navigation-fixed--active {
   top: 0;
   left: -170px;
   height: 1020px;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .main__navigation-fixed--active {
+    left: -100px;
+  }
 }
 
 .main .main__about .main__navigation-fixed--scrolled {
@@ -310,13 +457,34 @@ html {
   width: 125px;
 }
 
+@media (max-width: 768px) {
+  .main .main__about .main__navigation-fixed .menu-fixed__list {
+    height: 450px;
+    list-style: none;
+    width: 97px;
+  }
+}
+
 .main .main__about .main__navigation-fixed .menu-fixed__title {
   padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .main__navigation-fixed .menu-fixed__title {
+    padding-left: 5px;
+  }
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__item {
   font-size: 2rem;
   line-height: 33px;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .main__navigation-fixed .menu-fixed__item {
+    font-size: 1.4rem;
+    line-height: 23px;
+  }
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed .menu-fixed__item--line {
@@ -330,6 +498,13 @@ html {
 .main .main__about .main__navigation-fixed .menu-fixed__social {
   margin-top: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main .main__about .main__navigation-fixed .menu-fixed__social {
+    margin-top: 5px;
+    cursor: pointer;
+  }
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__link {
