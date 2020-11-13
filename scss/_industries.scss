@@ -90,4 +90,61 @@
         }
 
     }
+
+
+}
+
+@media screen and (max-width:$medium-device) {
+    .industries {
+        height: 445px;
+
+        &__header {
+            height: 77px;
+
+            .header__title {
+
+                font-size: 1.6rem;
+
+                line-height: 20px;
+
+            }
+
+        }
+
+    }
+
+    .industries__gallery {
+        height: 294px;
+        margin-top: 18px;
+
+        .gallery__column {
+            height: 100%;
+            width: 187px;
+        }
+
+        .gallery__item {
+            width: 187px;
+            height: 89px;
+
+            &:nth-last-child(1) {
+                display: none;
+            }
+
+            .gallery__image {
+                width: 100%;
+            }
+
+            &-text {
+                font-size: 1.4rem;
+                line-height: 89px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, .5);
+            }
+        }
+
+        .gallery__text {
+            display: none;
+
+        }
+    }
 }
