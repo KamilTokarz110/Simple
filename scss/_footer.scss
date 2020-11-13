@@ -32,3 +32,19 @@
         }
     }
 }
+
+@media screen and (max-width:$medium-device) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 66px;
+        width: 100%;
+        background-color: white;
+
+        .company__image {
+            width: 100%;
+
+        }
+    }
+}
