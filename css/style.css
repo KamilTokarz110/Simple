@@ -1009,6 +1009,109 @@ html {
   line-height: 25px;
 }
 
+@media screen and (max-width: 786px) {
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 445px;
+    width: 100%;
+    background-color: #023A5C;
+  }
+  .services__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 87px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: dotted 2px white;
+  }
+  .services__image {
+    margin-right: 17px;
+  }
+  .services__title {
+    color: white;
+    line-height: 20px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .services__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 257px;
+    margin-top: 33px;
+  }
+  .services__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services__item-text {
+    font-size: 1.2rem;
+    color: white;
+    padding-top: 11px;
+    text-align: left;
+    padding-left: 25px;
+  }
+  .services .br {
+    display: none;
+  }
+  .services__description {
+    height: 331px;
+  }
+  .services__text {
+    display: none;
+    color: white;
+    font-size: 2.1rem;
+    font-weight: 300;
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 27px;
+            column-gap: 27px;
+    margin-top: 75px;
+    line-height: 25px;
+  }
+}
+
 .news {
   display: -webkit-box;
   display: -ms-flexbox;
