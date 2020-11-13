@@ -1019,20 +1019,11 @@ html {
     background-color: #023A5C;
   }
   .services__header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: 87px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-bottom: dotted 2px white;
   }
-  .services__image {
-    margin-right: 17px;
+  .services__item {
+    width: 48px;
+    height: 37px;
   }
   .services__title {
     color: white;
@@ -1040,38 +1031,11 @@ html {
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 300;
+    padding-left: 10px;
   }
   .services__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     height: 257px;
     margin-top: 33px;
-  }
-  .services__column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .services__item {
     display: -webkit-box;
@@ -1084,31 +1048,26 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 48px;
+    height: 37px;
   }
   .services__item-text {
     font-size: 1.2rem;
-    color: white;
-    padding-top: 11px;
+    padding-top: 0;
     text-align: left;
     padding-left: 25px;
+  }
+  .services__item-image {
+    width: 100%;
   }
   .services .br {
     display: none;
   }
-  .services__description {
-    height: 331px;
-  }
   .services__text {
     display: none;
-    color: white;
-    font-size: 2.1rem;
-    font-weight: 300;
-    -webkit-column-count: 2;
-            column-count: 2;
-    -webkit-column-gap: 27px;
-            column-gap: 27px;
-    margin-top: 75px;
-    line-height: 25px;
   }
 }
 
@@ -1225,6 +1184,76 @@ html {
 .news__item--arrow {
   width: 26px;
   height: 42px;
+}
+
+@media screen and (max-width: 786px) {
+  .news {
+    height: 446px;
+  }
+  .news__header {
+    height: 88px;
+  }
+  .news__image {
+    width: 49px;
+    height: 44px;
+    margin-right: 14px;
+  }
+  .news__image-img {
+    width: 100%;
+  }
+  .news__title {
+    color: #023A5C;
+    font-size: 1.6rem;
+  }
+  .news__list {
+    height: 358px;
+  }
+  .news__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    width: 115px;
+  }
+  .news__item .news__item-image {
+    width: 100%;
+  }
+  .news__item .item__info {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .news__item .item__info .info__title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .news__item .item__info .info__link {
+    color: #023A5C;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  .news__item .item__info .info__text {
+    display: none;
+    padding-bottom: 15px;
+  }
+  .news__item .item__info .info__line {
+    width: 31px;
+    margin-top: 15px;
+  }
+  .news__item--arrow {
+    width: 16px;
+    height: 25px;
+  }
 }
 
 .contact {
