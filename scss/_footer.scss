@@ -38,11 +38,46 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 66px;
+        height: 100%;
         width: 100%;
         background-color: white;
 
+        .footer__arrow {
+            // background-color: yellow;
+            // width: 15px;
+            // height: 25px;
+            padding-left: 37px;
+
+            &--right {
+                padding-right: 37px;
+            }
+
+            .arrow__image {
+                width: 100%;
+                width: 15px;
+                height: 25px;
+
+                &--right {
+
+                    width: 100%;
+                    width: 15px;
+                    // padding-right: 37px;
+                }
+            }
+        }
+
+        .footer__company__list {
+            height: 100%;
+            width: 491px;
+            // background-color: tomato;
+        }
+
+        .company__item {
+            margin-left: 16px;
+        }
+
         .company__image {
+
             width: 100%;
 
         }

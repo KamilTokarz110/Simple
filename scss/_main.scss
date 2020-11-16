@@ -362,8 +362,7 @@
             @media(max-width:$medium-device) {
                 position: relative;
                 position: fixed;
-                top: 88px;
-                left: 0px;
+
                 z-index: 1;
                 height: 445px;
                 width: 117px;
@@ -391,10 +390,16 @@
                 right: 10px;
                 cursor: pointer;
 
+
+
                 &--active {
                     // height: 100%;
                     transform: rotate(180deg);
+
                     // background-color: $main-color;
+                    @media(max-width:$medium-device) {
+                        right: 0px;
+                    }
                 }
             }
 
@@ -466,6 +471,8 @@
                     // width: 212px;
                     bottom: 20%;
                     font-size: 2rem;
+
+
 
                     @media(max-width: $medium-device) {
                         display: flex;

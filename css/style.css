@@ -9,6 +9,7 @@ html {
   font-size: 10px;
   font-family: "Libre Franklin", sans-serif;
   background-color: #023A5C;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -29,6 +30,13 @@ html {
 
 @media (max-width: 786px) {
   .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -449,8 +457,6 @@ html {
   .main .main__about .main__navigation-fixed {
     position: relative;
     position: fixed;
-    top: 88px;
-    left: 0px;
     z-index: 1;
     height: 445px;
     width: 117px;
@@ -484,6 +490,12 @@ html {
 .main .main__about .main__navigation-fixed .menu-fixed__arrow--active {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media (max-width: 786px) {
+  .main .main__about .main__navigation-fixed .menu-fixed__arrow--active {
+    right: 0px;
+  }
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed {
@@ -716,6 +728,7 @@ html {
 @media screen and (max-width: 786px) {
   .industries {
     height: 445px;
+    width: 100%;
   }
   .industries__header {
     height: 77px;
@@ -763,6 +776,7 @@ html {
           flex-direction: column;
   height: 951px;
   background-color: white;
+  width: 100%;
 }
 
 .products__header {
@@ -869,6 +883,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     height: 446px;
+    width: 100%;
   }
   .products__header {
     margin-top: 0px;
@@ -1708,9 +1723,31 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 66px;
+    height: 100%;
     width: 100%;
     background-color: white;
+  }
+  .footer .footer__arrow {
+    padding-left: 37px;
+  }
+  .footer .footer__arrow--right {
+    padding-right: 37px;
+  }
+  .footer .footer__arrow .arrow__image {
+    width: 100%;
+    width: 15px;
+    height: 25px;
+  }
+  .footer .footer__arrow .arrow__image--right {
+    width: 100%;
+    width: 15px;
+  }
+  .footer .footer__company__list {
+    height: 100%;
+    width: 491px;
+  }
+  .footer .company__item {
+    margin-left: 16px;
   }
   .footer .company__image {
     width: 100%;
