@@ -21,6 +21,10 @@ html {
         justify-content: center;
         width: 768px;
     }
+
+    @media(max-width: $small-device) {
+        width: 320px;
+    }
 }
 
 .content {
@@ -31,5 +35,10 @@ html {
 
 
         width: 597px;
+    }
+
+    @media(max-width: $small-device) {
+
+        width: 291px;
     }
 }
