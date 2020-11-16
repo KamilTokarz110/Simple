@@ -953,6 +953,58 @@ html {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .industries {
+    height: 458px;
+    width: 100%;
+  }
+  .industries__header {
+    height: 72px;
+  }
+  .industries__header .header__title {
+    font-size: 1.6rem;
+    line-height: 20px;
+  }
+  .industries__gallery {
+    height: 363px;
+    margin-top: 8px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .industries__gallery .gallery__column {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    width: 90px;
+  }
+  .industries__gallery .gallery__item {
+    position: relative;
+    width: 90px;
+    height: 115px;
+    word-break: break-all;
+  }
+  .industries__gallery .gallery__item:nth-last-child(1) {
+    display: none;
+  }
+  .industries__gallery .gallery__item .gallery__image {
+    display: none;
+  }
+  .industries__gallery .gallery__item-text {
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 115px;
+  }
+  .industries__gallery .gallery__text {
+    display: none;
+  }
+}
+
 .products {
   display: -webkit-box;
   display: -ms-flexbox;
