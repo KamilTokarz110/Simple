@@ -923,6 +923,7 @@ html {
   }
   .industries__header {
     height: 77px;
+    border-bottom: dotted 1px white;
   }
   .industries__header .header__title {
     font-size: 1.6rem;
@@ -1183,7 +1184,7 @@ html {
   .products__header {
     margin-top: 0px;
     height: 57px;
-    border-bottom: dotted 2px #023A5C;
+    border-bottom: dotted 1px #023A5C;
   }
   .products__header .header__image {
     margin-right: 5px;
@@ -1354,6 +1355,7 @@ html {
   }
   .services__header {
     height: 87px;
+    border-bottom: dotted 1px white;
   }
   .services__item {
     width: 48px;
@@ -2152,6 +2154,94 @@ html {
   }
   .contact .submit__text {
     width: 171px;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+  .contact .text__span {
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact {
+    height: 380px;
+  }
+  .contact__header {
+    height: 65px;
+    border-bottom: dotted 1px white;
+  }
+  .contact__image {
+    width: 39px;
+    height: 39px;
+    margin-right: 10 px;
+  }
+  .contact__image-img {
+    width: 100%;
+  }
+  .contact__title {
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+  }
+  .contact__branch {
+    display: none;
+    height: 164px;
+  }
+  .contact__branch .branch__item {
+    display: none;
+    height: 136px;
+    font-size: 1.2rem;
+  }
+  .contact .contact__slider--small {
+    width: 100%;
+    height: 164px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: red;
+  }
+  .contact .submit__return {
+    display: none;
+  }
+  .contact .contact__submit {
+    display: none;
+  }
+  .contact .contact__submit--medium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 150px;
+    border-bottom: none;
+    width: 100%;
+  }
+  .contact .submit__item {
+    height: 100%;
+    font-size: 1.2rem;
+    font-family: "Libre Franklin", sans-serif;
+    color: white;
+    margin-top: 10px;
+  }
+  .contact .submit__item:nth-child(1) {
+    height: 60%;
+  }
+  .contact .submit__item:nth-last-child(1) {
+    margin-left: 10px;
+  }
+  .contact .submit__text {
+    width: 152px;
     line-height: 15px;
     margin-top: 10px;
   }
