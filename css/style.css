@@ -912,6 +912,10 @@ html {
   line-height: 20px;
 }
 
+.industries__gallery .gallery__image--small {
+  display: none;
+}
+
 @media screen and (max-width: 786px) {
   .industries {
     height: 445px;
@@ -1016,6 +1020,10 @@ html {
   height: 951px;
   background-color: white;
   width: 100%;
+}
+
+.products .products__list--small {
+  display: none;
 }
 
 .products__header {
@@ -1372,6 +1380,76 @@ html {
   }
   .services .br {
     display: none;
+  }
+  .services__text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .services {
+    height: 460px;
+    width: 100%;
+  }
+  .services__header {
+    height: 62px;
+  }
+  .services__item-image {
+    width: 35px;
+    height: 32px;
+  }
+  .services .services__list--small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 332px;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .services__item--small {
+    width: 100%;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+  }
+  .services .services__item-text--small {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+  .services__column {
+    display: none;
+  }
+  .services__item {
+    width: 26px;
+    height: 20px;
+  }
+  .services__item-image {
+    width: 26px;
+    height: 20px;
   }
   .services__text {
     display: none;

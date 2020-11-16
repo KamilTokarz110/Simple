@@ -89,6 +89,10 @@
 
         }
 
+        .gallery__image--small {
+            display: none;
+        }
+
     }
 
 
@@ -229,5 +233,7 @@
             display: none;
 
         }
+
+
     }
 }
