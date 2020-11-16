@@ -404,8 +404,7 @@
             .menu-fixed {
                 display: flex;
                 align-items: center;
-
-                @media(max-width:$medium-device) {}
+                // justify-content: center;
 
                 &__list {
 
@@ -463,11 +462,8 @@
 
                 .menu-fixed__social {
                     position: absolute;
-                    // background-color: yellow;
-                    // justify-self: flex-start;
-                    // flex: 2;
-                    // width: 212px;
-                    bottom: 20%;
+
+                    bottom: 15%;
                     font-size: 2rem;
 
 

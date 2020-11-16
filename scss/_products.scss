@@ -90,6 +90,8 @@
         width: 100%;
 
 
+
+
         &__header {
 
             margin-top: 0px;
@@ -112,6 +114,10 @@
         .products__description {
             display: none;
 
+        }
+
+        .products__list--small {
+            display: none;
         }
 
         &__list {

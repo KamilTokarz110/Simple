@@ -215,6 +215,10 @@
                 display: none;
             }
 
+            .gallery__image--small {
+                display: block;
+            }
+
             &-text {
                 position: absolute;
                 font-size: $small-font-size;
