@@ -31,6 +31,10 @@
 
         }
     }
+
+    .footer__slider--small {
+        display: none;
+    }
 }
 
 @media screen and (max-width:$medium-device) {
@@ -80,6 +84,55 @@
 
             width: 100%;
 
+        }
+
+        .footer__slider--small {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:$small-device) {
+    .footer {
+
+        height: 80px;
+        width: 100%;
+
+
+        .content {
+
+            .footer__slider--small {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 291px;
+                height: 100%;
+
+
+                .footer__arrow--small {
+                    width: 21px;
+                    height: 34px;
+
+                    .arrow__image--small {
+                        width: 100%;
+                    }
+                }
+
+                .footer__arrow--rotate {
+
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .footer__arrow {
+            display: none;
+
+        }
+
+        .footer__company__list {
+            display: none;
         }
     }
 }

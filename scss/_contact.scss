@@ -221,6 +221,11 @@
 
         }
     }
+
+    .contact__slider--small {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:$medium-device) {
@@ -326,6 +331,10 @@
 
             text-transform: uppercase;
         }
+    }
+
+    .contact__slider--small {
+        display: none;
     }
 }
 
