@@ -14,7 +14,7 @@ arrow.addEventListener("click",function(){
 });
 const sectionOneOptions = {
     
-    rootMargin: "-300px 0px 0px 0px"
+    rootMargin: "-900px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
@@ -30,5 +30,26 @@ const sectionOneObserver = new IntersectionObserver(function(
     });
 },sectionOneOptions);
 sectionOneObserver.observe(mainSection);
+
+window.addEventListener('scroll', event => {
+    let navigationLinks = document.querySelectorAll('.menu-fixed__link');
+    let fromTop = window.scrollY;
+
+    navigationLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+        if(
+            section.offsetTop <= fromTop && 
+            section.offsetTop + section.offsetHeight > fromTop
+            ) {
+            
+                link.classList.add('menu-fixed__link--active');
+        
+            } else {
+                link.classList.remove('menu-fixed__link--active');
+            }
+        
+        
+});
+});
 
  
