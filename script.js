@@ -1,3 +1,5 @@
+
+
 const arrow = document.querySelector('.menu-fixed__arrow');
 const nav = document.querySelector('.main__navigation-fixed');
 const mainSection = document.querySelector('.main__about');
@@ -28,3 +30,5 @@ const sectionOneObserver = new IntersectionObserver(function(
     });
 },sectionOneOptions);
 sectionOneObserver.observe(mainSection);
+
+ 

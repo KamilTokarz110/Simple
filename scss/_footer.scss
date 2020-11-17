@@ -99,32 +99,41 @@
         width: 100%;
 
 
-        .content {
+        // .content {
 
-            .footer__slider--small {
+        .footer__slider--small {
 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // width: 291px;
+            height: 100%;
+            width: 100%;
+
+            .company__item--small {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                width: 291px;
-                height: 100%;
+                justify-content: center;
+                width: 90px;
+                height: 80px;
+            }
 
+            .footer__arrow--small {
+                width: 21px;
+                height: 34px;
 
-                .footer__arrow--small {
-                    width: 21px;
-                    height: 34px;
-
-                    .arrow__image--small {
-                        width: 100%;
-                    }
-                }
-
-                .footer__arrow--rotate {
-
-                    transform: rotate(180deg);
+                .arrow__image--small {
+                    width: 100%;
                 }
             }
+
+            .footer__arrow--rotate {
+
+                transform: rotate(180deg);
+            }
         }
+
+        // }
 
         .footer__arrow {
             display: none;
