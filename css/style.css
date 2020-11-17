@@ -2194,18 +2194,55 @@ html {
     font-size: 1.2rem;
   }
   .contact .contact__slider--small {
-    width: 100%;
-    height: 164px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: red;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 164px;
+    border-bottom: dotted 1px white;
+  }
+  .contact .contact__slider--small .contact__arrow {
+    width: 21px;
+    height: 34px;
+  }
+  .contact .contact__slider--small .contact__arrow--rotate {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .contact .contact__slider--small .contact__arrow .arrow__image {
+    width: 100%;
+  }
+  .contact .contact__slider--small .branch__item--small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 130px;
+    height: 150px;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .contact .contact__slider--small .branch__item--small .branch__address {
+    text-align: center;
   }
   .contact .submit__return {
     display: none;
@@ -2217,14 +2254,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     height: 150px;
-    border-bottom: none;
     width: 100%;
   }
   .contact .submit__item {
@@ -2232,21 +2262,14 @@ html {
     font-size: 1.2rem;
     font-family: "Libre Franklin", sans-serif;
     color: white;
-    margin-top: 10px;
-  }
-  .contact .submit__item:nth-child(1) {
-    height: 60%;
   }
   .contact .submit__item:nth-last-child(1) {
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .contact .submit__text {
     width: 152px;
     line-height: 15px;
-    margin-top: 10px;
-  }
-  .contact .text__span {
-    text-transform: uppercase;
+    margin-top: 13px;
   }
 }
 
