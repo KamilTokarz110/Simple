@@ -3,11 +3,20 @@
 const arrow = document.querySelector('.menu-fixed__arrow');
 const nav = document.querySelector('.main__navigation-fixed');
 const mainSection = document.querySelector('.main__about');
-
-
 const slides = document.querySelectorAll('.main__about__image');
-
 const rectangles = document.querySelectorAll('.rectangle__item');
+
+
+
+const searchIcon = document.querySelector('.item__image');
+const mainInput = document.querySelector('.main__input');
+
+searchIcon.addEventListener("click",function () {
+    mainInput.classList.toggle('main__input--active');
+    searchIcon.classList.toggle('item__image--active');
+})
+
+
 let currentSlide = 0;
 const time = 5000;
 setInterval(function(){

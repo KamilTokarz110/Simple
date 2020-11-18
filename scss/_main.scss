@@ -5,6 +5,53 @@
     width: 100%;
     background-color: transparent;
 
+    .main__search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 1%;
+        height: 100%;
+        // background-color: black;
+        flex-basis: 20%;
+
+        .main__input {
+            opacity: 0;
+            position: relative;
+            height: 50%;
+            width: 300px;
+            // background-color: black;
+            // border-radius: 5%;
+            transition: 0.5s;
+
+            &--active {
+                opacity: 1;
+            }
+        }
+
+        .main__item {
+            position: absolute;
+            right: 0;
+            width: 32px;
+            height: 32px;
+
+
+
+            .item__image {
+                color: white;
+                font-size: 3rem;
+                line-height: 32px;
+                transition: 0.5s;
+
+                &--active {
+                    color: black;
+                }
+
+            }
+
+        }
+    }
+
     @media(max-width:$medium-device) {
 
         width: 768px;
