@@ -48,6 +48,13 @@
 
             color: white;
 
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgba(0, 0, 0, 0);
+            }
 
             &-text {
                 text-align: center;
@@ -64,6 +71,12 @@
                     line-height: 152px;
                     width: 100%;
                     background-color: rgba(0, 0, 0, .5);
+                    transition: 0.5s;
+
+                    &:hover {
+                        text-shadow: 3px 4px 2px rgb(0, 0, 0);
+                        background-color: rgba(0, 0, 0, 0);
+                    }
                 }
 
             }
@@ -77,6 +90,10 @@
                 width: 315px;
                 height: 153px;
                 background-color: #707070;
+
+                &:hover {
+                    background-color: #707070;
+                }
 
             }
         }

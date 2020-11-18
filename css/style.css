@@ -968,6 +968,15 @@ html {
 .industries__gallery .gallery__item {
   position: relative;
   color: white;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.industries__gallery .gallery__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .industries__gallery .gallery__item-text {
@@ -987,6 +996,13 @@ html {
   line-height: 152px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.industries__gallery .gallery__item-text--shadow:hover {
+  text-shadow: 3px 4px 2px black;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .industries__gallery .gallery__item:last-child {
@@ -997,6 +1013,10 @@ html {
 .industries__gallery .gallery__item--gray {
   width: 315px;
   height: 153px;
+  background-color: #707070;
+}
+
+.industries__gallery .gallery__item--gray:hover {
   background-color: #707070;
 }
 
