@@ -41,7 +41,13 @@
         <div class="main__about content">
             
           
-            
+            <!-- <div class="main__about__item"> -->
+                
+                <img class="main__about__image main__about__image-show" src="images/bgc_main_1.png" alt="">
+                <img class="main__about__image" src="images/bgc_main_2.png" alt="">
+                <img class="main__about__image" src="images/bgc_main_3.png" alt="">
+                <img class="main__about__image" src="images/bgc_main_4.png" alt="">
+            <!-- </div> -->
             <aside class="main__navigation-fixed">
                 
                 <nav class="menu-fixed">
@@ -536,6 +542,13 @@ $(document).ready(function(){
       nextArrow:"<img class='a-right control-c next slick-next' src='/images/footer_arrow_main-color_320_right.png'>",
     });
   });
+  $(document).ready(function(){
+    $('.main__about__slider').slick({
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='/images/footer_arrow_main-color_320_left.png'>",
+      nextArrow:"<img class='a-right control-c next slick-next' src='/images/footer_arrow_main-color_320_right.png'>",
+    });
+  });
+  
   
 
 </script>

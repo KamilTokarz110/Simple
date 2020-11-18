@@ -5,8 +5,82 @@ const nav = document.querySelector('.main__navigation-fixed');
 const mainSection = document.querySelector('.main__about');
 
 
+const slides = document.querySelectorAll('.main__about__image');
+
+const rectangles = document.querySelectorAll('.rectangle__item');
+let currentSlide = 0;
+const time = 5000;
+setInterval(function(){
+    next();
+},time);
+
+function next() {
+    if(currentSlide == slides.length -1){
+        currentSlide = 0;
+    }else{
+        currentSlide++;
+    }
+    document.querySelector('.main__about__image.main__about__image-show').classList.remove('main__about__image-show');
+    slides[currentSlide].classList.add('main__about__image-show');
+
+    document.querySelector('.rectangle__item.rectangle__item--active').classList.remove('rectangle__item--active');
+    rectangles[currentSlide].classList.add('rectangle__item--active');
+};
+
+  for (let i = 0; i < rectangles.length; i++) {
+    (function(index) {
+       rectangles[i].onclick = function() {
+         if (index !== currentSlide) {
+           document.querySelector('.rectangle__item.rectangle__item--active').classList.remove('rectangle__item--active');
+           this.classList.add('rectangle__item--active');
+           document.querySelector('.main__about__image.main__about__image-show').classList.remove('main__about__image-show');
+           slides[index].classList.add('main__about__image-show');
+           currentSlide = index;
+         }
+      }
+    })(i);
+   }
+
+//SLIDER
 
 
+// const slideList = [{
+//     img: "images/bgc_main_1.png",
+// },
+// {
+//     img: "images/bgc_main_2.png",
+// },
+// {
+//     img: "images/bgc_main_3.png",
+// },
+// {
+//     img: "images/bgc_main_4.png",
+// }];
+
+// const image = document.querySelector(".main__about__image");
+// const rectangles = [...document.querySelectorAll(".rectangle__item")];
+// const time = 5000;
+// let active = 0;
+
+// const changeRectangle = ()=>{
+// const activeRec = rectangles.findIndex(rec => rec.classList.contains('rectangle__item--active'))
+// rectangles[activeRec].classList.remove('rectangle__item--active');
+// rectangles[active].classList.add('rectangle__item--active');
+// };
+// const changeSlide = () => {
+//     active++;
+//     if(active === slideList.length){
+//         active =0;
+//     };
+//     image.src = slideList[active].img;
+// changeRectangle();
+
+// };
+// setInterval(changeSlide,time)
+
+
+
+//SIDE_MENU
 arrow.addEventListener("click",function(){
     arrow.classList.toggle("menu-fixed__arrow--active");
     nav.classList.toggle("main__navigation-fixed--active");
