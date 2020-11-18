@@ -421,8 +421,8 @@
 
 
                     @media(max-width:$medium-device) {
-                        padding-top: 5px;
-                        padding-left: 5px;
+                        padding-top: 0px;
+                        padding-left: 0px;
                     }
 
                 }
@@ -432,28 +432,33 @@
                     font-size: 2rem;
                     margin: 8px 0px;
 
+
+
                     &--dotted {
-                        // line-height: 20px;
-                        // margin-bottom: 20px;
-                        // margin-top: 20px;
+
                         border-bottom: 1px dotted $main-color;
+
+                        @media(max-width: $medium-device) {
+                            width: 39px;
+
+                        }
 
                         &:nth-of-type(3n+2) {
                             margin-bottom: 16px;
                             margin-top: 17px;
-                            // background-color: yellow;
+
                         }
 
                         &:nth-of-type(3n+3) {
                             margin-bottom: 19px;
                             margin-top: 17px;
-                            // background-color: gray;
+
                         }
                     }
 
                     @media(max-width: $medium-device) {
                         font-size: 1.4rem;
-                        line-height: 23px;
+
                     }
 
 
@@ -463,19 +468,14 @@
 
                 .menu-fixed__social {
                     position: absolute;
-
                     bottom: 19%;
                     font-size: 2rem;
-
-
 
                     @media(max-width: $medium-device) {
                         display: flex;
                         flex-direction: row-reverse;
                         bottom: 5%;
                         width: 87px;
-                        // padding-left: 10px;
-                        // justify-content: space-between;
                     }
 
                     .menu-fixed__social__item {
@@ -506,8 +506,12 @@
                     transition: 0.5s;
 
                     &--active {
-                        font-size: 2.5rem;
+                        font-size: 2.3rem;
                         text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
+
+                        @media(max-width: $medium-device) {
+                            font-size: 1.6rem;
+                        }
                     }
 
                     &:nth-last-child(1) {
@@ -669,12 +673,10 @@
                 }
 
                 .menu-fixed {
-                    display: flex;
 
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    align-items: flex-start;
 
+                    margin: 20px 0px 0px 10px;
 
                     &__list {
 
@@ -684,23 +686,49 @@
 
                     &__item {
                         font-size: $small-font-size;
-                        line-height: 20px;
+
+
+
+
+                        &--dotted {
+                            width: 49px;
+                            border-bottom: 1px dotted $main-color;
+
+                            &:nth-of-type(3n+2) {
+
+                                margin-top: 0px;
+
+
+                            }
+
+                            &:nth-of-type(3n+3) {
+                                margin-bottom: 0px;
+
+
+                            }
+                        }
                     }
 
-                    .menu-fixed__item--line {
-                        margin: 5px 0px;
-                        width: 48px;
+                    .menu-fixed__link {
+
+
+                        &--active {
+                            font-size: 1.3rem;
+
+                        }
                     }
 
                     .menu-fixed__social {
                         flex-direction: row;
                         align-items: center;
                         justify-content: center;
-                        bottom: 20px;
+                        bottom: 10px;
+                        left: 10px;
                     }
 
                     .menu-fixed__arrow {
 
+                        align-self: center;
 
                         .menu-fixed__arrow__image {
                             width: 8px;
@@ -712,9 +740,10 @@
                 }
 
                 &--scrolled {
+                    align-items: center;
                     top: 0px;
                     height: 100%;
-                    // background-color: yellow;
+
                 }
 
             }

@@ -14,7 +14,7 @@ arrow.addEventListener("click",function(){
 });
 const sectionOneOptions = {
     
-    rootMargin: "-900px 0px 0px 0px"
+    rootMargin: "0px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
@@ -32,7 +32,7 @@ const sectionOneObserver = new IntersectionObserver(function(
 sectionOneObserver.observe(mainSection);
 
 window.addEventListener('scroll', event => {
-    let navigationLinks = document.querySelectorAll('.menu-fixed__link');
+    let navigationLinks = document.querySelectorAll('[data-key]');
     let fromTop = window.scrollY;
 
     navigationLinks.forEach(link => {

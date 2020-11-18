@@ -293,8 +293,6 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-
-            // background-color: yellow;
             height: 109px;
             border-bottom: none;
 
@@ -310,7 +308,6 @@
 
             &:nth-child(1) {
                 height: 60%;
-                // background-color: tomato;
             }
 
             &:nth-last-child(1) {

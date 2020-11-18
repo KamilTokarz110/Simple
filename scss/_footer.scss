@@ -47,9 +47,6 @@
         background-color: white;
 
         .footer__arrow {
-            // background-color: yellow;
-            // width: 15px;
-            // height: 25px;
             padding-left: 37px;
 
             &--right {
@@ -65,7 +62,7 @@
 
                     width: 100%;
                     width: 15px;
-                    // padding-right: 37px;
+
                 }
             }
         }
@@ -73,7 +70,7 @@
         .footer__company__list {
             height: 100%;
             width: 491px;
-            // background-color: tomato;
+
         }
 
         .company__item {
@@ -99,14 +96,14 @@
         width: 100%;
 
 
-        // .content {
+
 
         .footer__slider--small {
 
             display: flex;
             align-items: center;
             justify-content: center;
-            // width: 291px;
+
             height: 100%;
             width: 100%;
 
@@ -133,7 +130,7 @@
             }
         }
 
-        // }
+
 
         .footer__arrow {
             display: none;
