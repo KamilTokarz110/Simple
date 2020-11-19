@@ -66,9 +66,10 @@
     &__submit {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         height: 474px;
         border-bottom: dotted 2px white;
+        background-color: chocolate;
 
         &--medium {
             display: none;
@@ -82,8 +83,8 @@
             flex-direction: column;
             align-items: flex-end;
             justify-content: space-evenly;
-            flex: 4;
-            width: 413px;
+            // flex: 3;
+            width: 420px;
             color: white;
             font-weight: 300;
             font-size: 1.7rem;
@@ -177,7 +178,7 @@
         }
 
         .submit__social {
-            flex: 1;
+            // flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -187,17 +188,22 @@
             font-size: 1.7rem;
             font-weight: 300;
             text-transform: uppercase;
+            // margin: 0px 10px;
+            background-color: chartreuse;
+            padding-right: 5px;
         }
 
         .submit__info {
-            flex: 2;
-            width: 216px;
+            // flex: 2;
+            width: 255px;
             height: 385px;
             display: flex;
             flex-direction: column;
             font-size: 1.7rem;
             color: white;
             font-weight: 300;
+            background-color: crimson;
+            padding-left: 22px;
 
             &--medium {
                 display: none;
@@ -213,6 +219,7 @@
 
             .info__title {
                 text-transform: uppercase;
+
 
                 &--medium {
                     display: none;

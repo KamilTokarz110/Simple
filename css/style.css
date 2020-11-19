@@ -59,6 +59,11 @@ html {
   width: 1000px;
 }
 
+.content--contact {
+  margin: 0 auto;
+  width: 843px;
+}
+
 @media (max-width: 786px) {
   .content {
     width: 597px;
@@ -1708,6 +1713,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 987px;
   width: 100%;
   background-color: white;
@@ -1746,12 +1754,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 500px;
   margin-top: 80px;
-  padding-right: 20px;
 }
 
 .news__item {
@@ -1765,16 +1772,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 380px;
   width: 190px;
   color: #023A5C;
   font-weight: 300;
   font-size: 1.3rem;
   background-color: gray;
-  margin: 0px 0px 0px 20px;
 }
 
 .news__item-image {
@@ -1833,15 +1836,19 @@ html {
   position: absolute;
   width: 25px;
   height: 40px;
-  background-color: gold;
 }
 
 .news__item--arrow--left {
-  left: -17px;
+  left: -30px;
 }
 
 .news__item--arrow--right {
-  right: -10px;
+  right: -17px;
+}
+
+.news__item .news__item-image {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .news .news__list--small {
@@ -2135,11 +2142,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 474px;
   border-bottom: dotted 2px white;
+  background-color: chocolate;
 }
 
 .contact__submit--medium {
@@ -2160,10 +2168,7 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  width: 413px;
+  width: 420px;
   color: white;
   font-weight: 300;
   font-size: 1.7rem;
@@ -2289,9 +2294,6 @@ html {
 }
 
 .contact__submit .submit__social {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2310,13 +2312,12 @@ html {
   font-size: 1.7rem;
   font-weight: 300;
   text-transform: uppercase;
+  background-color: chartreuse;
+  padding-right: 5px;
 }
 
 .contact__submit .submit__info {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  width: 216px;
+  width: 255px;
   height: 385px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2328,6 +2329,8 @@ html {
   font-size: 1.7rem;
   color: white;
   font-weight: 300;
+  background-color: crimson;
+  padding-left: 22px;
 }
 
 .contact__submit .submit__info--medium {
@@ -2561,34 +2564,58 @@ html {
 }
 
 .footer__company__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
 }
 
-.footer__arrow {
-  width: 20%;
+.footer .company__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.footer .company__item .company__image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer__arrow {
+  position: absolute;
+  width: 30px;
+  right: -10%;
+}
+
+.footer__arrow--right {
+  position: absolute;
+  left: -10%;
 }
 
 .footer__arrow .arrow__image {
+  max-width: 100%;
+  max-height: 100%;
   cursor: pointer;
 }
 
 .footer__arrow .arrow__image--rotated {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-left: auto;
 }
 
 .footer .footer__slider--small {

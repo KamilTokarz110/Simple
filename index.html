@@ -303,7 +303,7 @@
                 </div>
             </div>
             <div class="news__list">
-                <!-- <div class="news__item news__item--arrow"><img class="news__item-image news__item-image--rotate" src="images/news_arrow.png" alt=""></div> -->
+                <!-- <div class="news__item news__item--arrow"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div> -->
                 <div class="news__item">
                     
                     <img class="news__item-image" src="images/news_climbing.png" alt="">
@@ -367,7 +367,7 @@
                         <hr class="info__line">
                     <a href="#" class="info__link">więcej</a>
                 </div>
-                </div> -->
+                </div>
                 <div class="news__item">
                     
                     <img class="news__item-image" src="images/news_worker.png" alt="">
@@ -405,15 +405,15 @@
                         <hr class="info__line">
                     <a href="#" class="info__link">więcej</a>
                 </div>
-                </div>
-                 <!-- <div class="news__item news__item--arrow"><img class="news__item-image" src="images/news_arrow.png" alt=""></div>  -->
+                </div> 
+                  <div class="news__item news__item--arrow"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>  --> 
                 
             </div>
             </div>
         </section>
 
         <section id="contact__section" class="contact">
-            <div class="content">
+            <div class="content content--contact">
                 <div class="contact__header">
                     <div class="contact__image"><img class="contact__image-img" src="images/contact_user.png" alt=""></div>
                     <h2 class="contact__title">Kontakt</h2>
@@ -546,8 +546,9 @@
             </div>
         </section>
         <footer id="footer__section" class="footer">
-            <div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div>
-            <div class="content">
+            <!-- <div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div> -->
+            <div class="content content--contact">
+                <!-- <div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div> -->
             <div class="footer__slider--small">
                
               
@@ -567,9 +568,16 @@
                     <div class="company__item"><img class="company__image" src="images/footer_ernst.png" alt=""></div>
                     <div class="company__item"><img class="company__image" src="images/footer_ministerstwo.png" alt=""></div>
                     <div class="company__item"><img class="company__image" src="images/footer_tnt.png" alt=""></div>
+
+                    <div class="company__item"><img class="company__image" src="images/footer_visiton-express.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="images/footer_bell.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="images/footer_ernst.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="images/footer_ministerstwo.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="images/footer_tnt.png" alt=""></div>
                 </div>
+                <!-- <div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div> -->
             </div>
-            <div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div>
+            <!-- <div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div> -->
         </footer>
 
     </div>
@@ -607,13 +615,25 @@ $(document).ready(function(){
       nextArrow:"<img class='a-right control-c next slick-next' src='/images/footer_arrow_main-color_320_right.png'>",
     });
   });
+  $(document).ready(function(){
+  $('.footer__company__list').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+//   slidesPerRow:1,
+  prevArrow:'<div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div>',
+      nextArrow:'<div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div>',
+});
+});
+$(document).ready(function(){
   $('.news__list').slick({
   infinite: true,
   slidesToShow: 4,
-  slidesToScroll: 2,
-  slidesPerRow:1,
-  prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate" src="images/news_arrow.png" alt=""></div>',
-      nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image" src="images/news_arrow.png" alt=""></div>',
+  slidesToScroll: 4,
+//   slidesPerRow:1,
+  prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
+      nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
+});
 });
   
   

@@ -32,6 +32,11 @@ html {
     margin: 0 auto;
     width: 1000px;
 
+    &--contact {
+        margin: 0 auto;
+        width: 843px;
+    }
+
     @media(max-width:$medium-device) {
 
 
