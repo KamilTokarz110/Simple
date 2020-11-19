@@ -1294,7 +1294,6 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 380px;
-  background-color: burlywood;
 }
 
 .products__item {
@@ -1448,16 +1447,13 @@ html {
   border-bottom: dotted 2px white;
 }
 
-.services__image {
-  margin-right: 17px;
-}
-
 .services__title {
   color: white;
   line-height: 35px;
   font-size: 2.9rem;
   text-transform: uppercase;
   font-weight: 300;
+  margin-left: 25px;
 }
 
 .services__list {
@@ -1470,11 +1466,12 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 340px;
-  margin-top: 62px;
+  height: 477px;
+  width: 100%;
 }
 
 .services__column {
+  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1486,21 +1483,24 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 307px;
 }
 
 .services__column--mid {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .services__item {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1513,11 +1513,39 @@ html {
           align-items: center;
 }
 
+.services__item--speach {
+  bottom: 9.5%;
+  left: 20%;
+}
+
+.services__item--login {
+  top: 13.5%;
+  left: 30%;
+}
+
+.services__item--book {
+  left: 52%;
+  top: 43%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.services__item--group {
+  top: 17%;
+  right: 27%;
+}
+
+.services__item--banknote {
+  bottom: 17.5%;
+  right: 19%;
+}
+
 .services__item-text {
   font-size: 1.7rem;
   color: white;
-  padding-top: 11px;
+  padding-top: 25px;
   text-align: center;
+  font-weight: 400;
 }
 
 .services__description {
@@ -1527,13 +1555,13 @@ html {
 .services__text {
   color: white;
   font-size: 2.1rem;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-column-count: 2;
           column-count: 2;
   -webkit-column-gap: 27px;
           column-gap: 27px;
-  margin-top: 75px;
   line-height: 25px;
+  text-align: justify;
 }
 
 @media screen and (max-width: 786px) {
