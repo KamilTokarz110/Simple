@@ -3,6 +3,7 @@ html {
     font-family: $special-font;
     background-color: $main-color;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 

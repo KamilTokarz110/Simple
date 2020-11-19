@@ -55,9 +55,11 @@
             <aside class="main__navigation-fixed">
                 
                 <nav class="menu-fixed">
-                    
+                    <div class="menu-fixed__header">
+                        <p class="menu-fixed__title">Menu</p></li>
+                    </div>
                     <ul class="menu-fixed__list">
-                        <li class="menu-fixed__item "><p class="menu-fixed__title">Menu</p></li>
+                      
                         
                         
                         <li class="menu-fixed__item menu-fixed__item--dotted"></li>
@@ -70,7 +72,7 @@
                         <li class="menu-fixed__item "><a href="#contact__section" data-key="menu__link--active" class="menu-fixed__link ">Kontakt</a></li>
                         
                         
-                        <li class="menu-fixed__item menu-fixed__item--dotted"></li>
+                        <li class="menu-fixed__item menu-fixed__item--dotted menu-fixed__item--mid"></li>
                         
                         <li class ="menu-fixed__item"><a href="#" class = "menu-fixed__link ">O firmie</a></li>
                         <li class ="menu-fixed__item"><a href="#" class = "menu-fixed__link">Nagrody</a></li>
@@ -98,8 +100,8 @@
            
         <div class="about__content content">
             <div class="about__content__title">
-                <h1 class="about__content__title-text">Simple</h1>
-                <p class="about__content__title-mid">- z nami biznez jest prostszy!</p>
+                <p class="about__content__title-text">Simple</p>
+                <p class="about__content__title-mid">- z nami biznes jest prostszy!</p>
                 <p class= "about__content__title-bottom">Dowiedź się więcej</p>
             </div>
             
@@ -301,7 +303,7 @@
                 </div>
             </div>
             <div class="news__list">
-                <div class="news__item news__item--arrow"><img class="news__item-image news__item-image--rotate" src="images/news_arrow.png" alt=""></div>
+                <!-- <div class="news__item news__item--arrow"><img class="news__item-image news__item-image--rotate" src="images/news_arrow.png" alt=""></div> -->
                 <div class="news__item">
                     
                     <img class="news__item-image" src="images/news_climbing.png" alt="">
@@ -352,8 +354,60 @@
                         <hr class="info__line">
                     <a href="#" class="info__link">więcej</a>
                 </div>
+            </div>
+                <div class="news__item">
+                    
+                    <img class="news__item-image" src="images/news_tablet.png" alt="">
+                    <div class="item__info">
+                    <p class="info__date">1.06.2013</p>
+                    <h3 class="info__title">lorem ipsum.</h3>
+                    <p class="info__text">lorem ipsum, lorem ipsum<br>
+                        lorem ipsumlorem<br>
+                        lorem ipsum ipsum.</p>
+                        <hr class="info__line">
+                    <a href="#" class="info__link">więcej</a>
                 </div>
-                <div class="news__item news__item--arrow"><img class="news__item-image" src="images/news_arrow.png" alt=""></div>
+                </div> -->
+                <div class="news__item">
+                    
+                    <img class="news__item-image" src="images/news_worker.png" alt="">
+                    <div class="item__info">
+                    <p class="info__date">1.06.2013</p>
+                    <h3 class="info__title">lorem ipsum.</h3>
+                    <p class="info__text">lorem ipsum, lorem ipsum<br>
+                        lorem ipsumlorem<br>
+                        lorem ipsum ipsum.</p>
+                        <hr class="info__line">
+                    <a href="#" class="info__link">więcej</a>
+                </div>
+                </div>
+                <div class="news__item">
+                    <img class="news__item-image" src="images/news_tablet.png" alt="">
+                    <div class="item__info">
+                    <p class="info__date">1.06.2013</p>
+                    <h3 class="info__title">lorem ipsum.</h3>
+                    <p class="info__text">lorem ipsum, lorem ipsum<br>
+                        lorem ipsumlorem<br>
+                        lorem ipsum ipsum.</p>
+                        <hr class="info__line">
+                    <a href="#" class="info__link">więcej</a>
+                </div>
+                </div>
+                <div class="news__item">
+                    <img class="news__item-image" src="images/news_worker-phone.png" alt="">
+                    <div class="item__info">
+                    <p class="info__date">1.06.2013</p>
+                    <h3 class="info__title">lorem ipsum.</h3>
+                    <p class="info__text">lorem ipsum, lorem ipsum<br>
+                        lorem ipsumlorem<br>
+                        lorem ipsum ipsum.</p>
+                        
+                        <hr class="info__line">
+                    <a href="#" class="info__link">więcej</a>
+                </div>
+                </div>
+                 <!-- <div class="news__item news__item--arrow"><img class="news__item-image" src="images/news_arrow.png" alt=""></div>  -->
+                
             </div>
             </div>
         </section>
@@ -553,6 +607,14 @@ $(document).ready(function(){
       nextArrow:"<img class='a-right control-c next slick-next' src='/images/footer_arrow_main-color_320_right.png'>",
     });
   });
+  $('.news__list').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  slidesPerRow:1,
+  prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate" src="images/news_arrow.png" alt=""></div>',
+      nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image" src="images/news_arrow.png" alt=""></div>',
+});
   
   
 

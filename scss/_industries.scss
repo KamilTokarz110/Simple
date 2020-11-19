@@ -11,7 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 165px;
+        height: 18%;
 
         border-bottom: dotted 2px white;
 
@@ -28,15 +28,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 786px;
-        margin-top: 47px;
+        height: 82%;
+        margin-top: 40px;
 
 
         .gallery__column {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            justify-content: space-between;
+            // justify-content: space-between;
+
             height: 100%;
 
 
@@ -45,7 +46,7 @@
 
         .gallery__item {
             position: relative;
-
+            margin: 10px 0px 10px 0px;
             color: white;
 
             cursor: pointer;
@@ -87,8 +88,8 @@
             }
 
             &--gray {
-                width: 315px;
-                height: 153px;
+                width: 313px;
+                height: 150px;
                 background-color: #707070;
 
                 &:hover {

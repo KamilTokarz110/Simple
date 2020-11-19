@@ -10,6 +10,7 @@ html {
   font-family: "Libre Franklin", sans-serif;
   background-color: #023A5C;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -231,6 +232,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 @media (max-width: 786px) {
@@ -240,8 +242,10 @@ html {
 }
 
 .main__header .menu__content .menu__item {
-  font-size: 2.1rem;
-  line-height: 2.1rem;
+  font-size: 2rem;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 0px 10px 0px 12px;
 }
 
 @media (max-width: 786px) {
@@ -255,7 +259,8 @@ html {
   display: block;
   color: white;
   text-decoration: none;
-  padding: 0 18px;
+  margin: 0px 9px 0px 9px;
+  text-align: center;
 }
 
 .main .main__about {
@@ -323,13 +328,13 @@ html {
 
 .main .main__about .about__content__title {
   position: absolute;
-  top: 400px;
-  right: -90px;
+  top: 355px;
+  right: -50px;
   color: white;
   font-weight: 300;
   width: 698px;
   height: 130px;
-  font-size: 5rem;
+  font-size: 4.9rem;
 }
 
 .main .main__about .about__content__title-text {
@@ -357,7 +362,8 @@ html {
 .main .main__about .about__content__title-bottom {
   font-size: 2.4rem;
   text-align: right;
-  margin-right: 90px;
+  margin-right: 50px;
+  margin-top: 25px;
 }
 
 @media (max-width: 786px) {
@@ -515,16 +521,18 @@ html {
 }
 
 .main .main__about .main__navigation-fixed {
-  position: relative;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   top: 0px;
   left: 0px;
   height: 100%;
@@ -570,8 +578,9 @@ html {
 
 .main .main__about .main__navigation-fixed .menu-fixed__arrow {
   position: absolute;
-  right: 10px;
+  right: 6%;
   cursor: pointer;
+  top: 56%;
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__arrow--active {
@@ -589,15 +598,45 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 90%;
+}
+
+.main .main__about .main__navigation-fixed .menu-fixed__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 130px;
+  height: 20%;
+}
+
+.main .main__about .main__navigation-fixed .menu-fixed__title {
+  font-size: 2rem;
+  margin-top: 20px;
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__list {
-  height: 649px;
+  height: 90%;
   list-style: none;
-  width: 125px;
+  width: 130px;
+}
+
+.main .main__about .main__navigation-fixed .menu-fixed__list .menu-fixed__item--mid {
+  padding-bottom: 0px;
 }
 
 @media (max-width: 786px) {
@@ -609,7 +648,9 @@ html {
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__title {
+  font-size: 2rem;
   padding-left: 10px;
+  padding-bottom: 12px;
 }
 
 @media (max-width: 786px) {
@@ -621,11 +662,15 @@ html {
 
 .main .main__about .main__navigation-fixed .menu-fixed__item {
   font-size: 2rem;
-  margin: 8px 0px;
+  margin: 10px 0px;
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__item--dotted {
-  border-bottom: 1px dotted #023A5C;
+  border-bottom: 2px dotted #023A5C;
+  margin-bottom: 25px;
+  width: 103px;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
 @media (max-width: 786px) {
@@ -634,14 +679,9 @@ html {
   }
 }
 
-.main .main__about .main__navigation-fixed .menu-fixed__item--dotted:nth-of-type(3n+2) {
-  margin-bottom: 16px;
-  margin-top: 17px;
-}
-
 .main .main__about .main__navigation-fixed .menu-fixed__item--dotted:nth-of-type(3n+3) {
-  margin-bottom: 19px;
-  margin-top: 17px;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 @media (max-width: 786px) {
@@ -652,8 +692,21 @@ html {
 
 .main .main__about .main__navigation-fixed .menu-fixed .menu-fixed__social {
   position: absolute;
-  bottom: 19%;
+  bottom: 8%;
+  left: 24%;
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  margin-top: 10px;
 }
 
 @media (max-width: 786px) {
@@ -670,8 +723,17 @@ html {
   }
 }
 
+.main .main__about .main__navigation-fixed .menu-fixed .menu-fixed__social .menu-fixed__link {
+  width: 29px;
+  height: 29px;
+}
+
 .main .main__about .main__navigation-fixed .menu-fixed .menu-fixed__social .menu-fixed__social__item {
-  margin-top: 10px;
+  font-size: 2.7rem;
+  color: #023A5C;
+  line-height: 29px;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 786px) {
@@ -693,6 +755,7 @@ html {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  padding-left: 5px;
 }
 
 .main .main__about .main__navigation-fixed .menu-fixed__link--active {
@@ -928,7 +991,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 165px;
+  height: 18%;
   border-bottom: dotted 2px white;
 }
 
@@ -949,8 +1012,8 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 786px;
-  margin-top: 47px;
+  height: 82%;
+  margin-top: 40px;
 }
 
 .industries__gallery .gallery__column {
@@ -964,14 +1027,12 @@ html {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 100%;
 }
 
 .industries__gallery .gallery__item {
   position: relative;
+  margin: 10px 0px 10px 0px;
   color: white;
   cursor: pointer;
   -webkit-transition: 0.5s;
@@ -1016,8 +1077,8 @@ html {
 }
 
 .industries__gallery .gallery__item--gray {
-  width: 315px;
-  height: 153px;
+  width: 313px;
+  height: 150px;
   background-color: #707070;
 }
 
@@ -1645,6 +1706,7 @@ html {
 }
 
 .news__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1655,7 +1717,8 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 500px;
-  margin-top: 135px;
+  margin-top: 80px;
+  padding-right: 20px;
 }
 
 .news__item {
@@ -1666,11 +1729,19 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 365px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 380px;
   width: 190px;
   color: #023A5C;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  background-color: gray;
+  margin: 0px 0px 0px 20px;
 }
 
 .news__item-image {
@@ -1679,7 +1750,6 @@ html {
 
 .news__item-image--rotate {
   color: white;
-  width: 100%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -1702,6 +1772,8 @@ html {
 
 .news__item .item__info .info__title {
   text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 5px;
 }
 
 .news__item .item__info .info__link {
@@ -1710,21 +1782,33 @@ html {
 }
 
 .news__item .item__info .info__text {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .news__item .item__info .info__line {
   border: none;
-  border-top: 1px dotted #023A5C;
+  border-top: 2px dotted #023A5C;
   color: #fff;
   background-color: #fff;
   height: 1px;
   width: 51px;
+  margin: 10px 0px;
 }
 
 .news__item--arrow {
-  width: 26px;
-  height: 42px;
+  position: absolute;
+  width: 25px;
+  height: 40px;
+  background-color: gold;
+}
+
+.news__item--arrow--left {
+  left: -17px;
+}
+
+.news__item--arrow--right {
+  right: -10px;
 }
 
 .news .news__list--small {
