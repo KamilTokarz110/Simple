@@ -1219,6 +1219,7 @@ html {
     width: 187px;
   }
   .industries__gallery .gallery__item {
+    position: relative;
     width: 188px;
     height: 90px;
     margin: 5px 0px 5px 0px;
@@ -1230,10 +1231,19 @@ html {
     width: 100%;
   }
   .industries__gallery .gallery__item-text {
+    position: absolute;
+    top: 50%;
     font-size: 1.4rem;
-    line-height: 89px;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 89px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-transform: uppercase;
   }
   .industries__gallery .gallery__text {
     display: none;
