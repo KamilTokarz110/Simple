@@ -682,6 +682,7 @@ html {
   .main .main__about .main__navigation-fixed .menu-fixed__header {
     width: 100%;
     height: 5%;
+    padding-left: 10px;
   }
 }
 
@@ -786,8 +787,9 @@ html {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    bottom: 5%;
+    bottom: -5%;
     width: 87px;
+    left: 5%;
   }
 }
 

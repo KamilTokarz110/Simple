@@ -544,6 +544,7 @@
                         width: 100%;
                         // background-color: darkkhaki;
                         height: 5%;
+                        padding-left: 10px;
                     }
 
                     .menu-fixed__title {
@@ -655,8 +656,9 @@
                     @media(max-width: $medium-device) {
                         display: flex;
                         flex-direction: row-reverse;
-                        bottom: 5%;
+                        bottom: -5%;
                         width: 87px;
+                        left: 5%;
                     }
 
                     .menu-fixed__link {
