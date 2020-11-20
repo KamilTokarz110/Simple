@@ -282,7 +282,7 @@
         </div>
         </section>
         <section id="news__section" class="news">
-            <div class="content">
+        <div class="content">
                 <div class="news__header">
                 <div class="news__image"><img class="news__image-img" src="images/news_refresh.png" alt=""></div>
                 <h2 class="news__title">Aktualności</h2>
@@ -302,8 +302,9 @@
                     <p class="info__text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</p>
                 </div>
             </div>
-            <div class="news__list">
+        <div class="news__list">
                 <!-- <div class="news__item news__item--arrow"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div> -->
+             <div class="news__slider">
                 <div class="news__item">
                     
                     <img class="news__item-image" src="images/news_climbing.png" alt="">
@@ -355,6 +356,7 @@
                     <a href="#" class="info__link">więcej</a>
                 </div>
             </div>
+        
                 <div class="news__item">
                     
                     <img class="news__item-image" src="images/news_tablet.png" alt="">
@@ -408,8 +410,10 @@
                 </div> 
                   <div class="news__item news__item--arrow"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>  --> 
                 
+            </div> 
+        
             </div>
-            </div>
+        </div>
         </section>
 
         <section id="contact__section" class="contact">
@@ -626,11 +630,10 @@ $(document).ready(function(){
 });
 });
 $(document).ready(function(){
-  $('.news__list').slick({
+  $('.news__slider').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 4,
-//   slidesPerRow:1,
   prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
       nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
 });
