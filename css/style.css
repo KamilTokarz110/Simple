@@ -2627,22 +2627,24 @@ html {
     height: 380px;
   }
   .contact__header {
-    height: 65px;
+    height: 50px;
     border-bottom: dotted 1px white;
   }
   .contact__image {
     width: 39px;
     height: 39px;
-    margin-right: 10 px;
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
   .contact__image-img {
     width: 100%;
   }
   .contact__title {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
     text-transform: uppercase;
+    margin-bottom: 5px;
   }
   .contact__branch {
     display: none;
