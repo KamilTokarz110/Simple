@@ -370,6 +370,7 @@ html {
 
 .main .main__about .about__content__title-text {
   text-transform: uppercase;
+  font-size: 4.9rem;
 }
 
 @media (max-width: 786px) {
