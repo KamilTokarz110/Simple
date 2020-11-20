@@ -2492,7 +2492,7 @@ html {
 
 @media screen and (max-width: 786px) {
   .contact {
-    height: 445px;
+    height: 380px;
   }
   .contact__header {
     height: 86px;
@@ -2500,7 +2500,7 @@ html {
   .contact__image {
     width: 50px;
     height: 50px;
-    margin-right: 18px;
+    margin-right: 10px;
   }
   .contact__image-img {
     width: 100%;
@@ -2545,15 +2545,18 @@ html {
     margin-top: 10px;
   }
   .contact .submit__item:nth-child(1) {
-    height: 60%;
+    height: 62%;
   }
   .contact .submit__item:nth-last-child(1) {
-    margin-left: 30px;
+    margin-left: 10px;
   }
   .contact .submit__text {
-    width: 171px;
+    width: 191px;
     line-height: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
+  }
+  .contact .submit__text--medium {
+    margin-top: 5px;
   }
   .contact .text__span {
     text-transform: uppercase;
