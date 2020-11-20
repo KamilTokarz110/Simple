@@ -1653,13 +1653,16 @@ html {
     width: 48px;
     height: 37px;
   }
+  .services .services__item-image--large {
+    display: none;
+  }
   .services__title {
     color: white;
     line-height: 20px;
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 300;
-    padding-left: 10px;
+    margin-left: 0px;
   }
   .services__list {
     height: 257px;
@@ -1673,14 +1676,30 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 48px;
     height: 37px;
+  }
+  .services__item--speach {
+    bottom: 2%;
+    left: 10%;
+  }
+  .services__item--login {
+    top: 0%;
+    left: 10%;
+  }
+  .services__item--book {
+    left: 26%;
+    top: 46%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .services__item--group {
+    top: -2%;
+    right: 103%;
+  }
+  .services__item--banknote {
+    bottom: 0%;
+    right: 80%;
   }
   .services__item-text {
     font-size: 1.2rem;

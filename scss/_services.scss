@@ -151,6 +151,12 @@
             width: 48px;
             height: 37px;
 
+
+
+        }
+
+        .services__item-image--large {
+            display: none;
         }
 
         &__title {
@@ -159,7 +165,7 @@
             font-size: 1.6rem;
             text-transform: uppercase;
             font-weight: 300;
-            padding-left: 10px;
+            margin-left: 0px;
 
         }
 
@@ -177,11 +183,36 @@
         &__item {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            // align-items: center;
+            // justify-content: center;
             width: 48px;
             height: 37px;
 
+            &--speach {
+                bottom: 2%;
+                left: 10%;
+            }
+
+            &--login {
+                top: 0%;
+                left: 10%;
+            }
+
+            &--book {
+                left: 26%;
+                top: 46%;
+                transform: translate(-50%, -50%);
+            }
+
+            &--group {
+                top: -2%;
+                right: 103%;
+            }
+
+            &--banknote {
+                bottom: 0%;
+                right: 80%;
+            }
 
             &-text {
                 font-size: 1.2rem;
