@@ -2161,7 +2161,6 @@ html {
           justify-content: space-between;
   height: 474px;
   border-bottom: dotted 2px white;
-  background-color: chocolate;
 }
 
 .contact__submit--medium {
@@ -2277,7 +2276,8 @@ html {
 
 .contact__submit .submit__send .form__checkboxes .checkboxes__text {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
+  padding-left: 10px;
 }
 
 .contact__submit .submit__send .form__checkboxes .item {
@@ -2297,6 +2297,7 @@ html {
   width: 20px;
   height: 20px;
   margin-right: 12px;
+  margin-left: 8px;
 }
 
 .contact__submit .submit__send .form__button {
@@ -2326,8 +2327,7 @@ html {
   font-size: 1.7rem;
   font-weight: 300;
   text-transform: uppercase;
-  background-color: chartreuse;
-  padding-right: 5px;
+  margin-left: 25px;
 }
 
 .contact__submit .submit__info {
@@ -2343,7 +2343,6 @@ html {
   font-size: 1.7rem;
   color: white;
   font-weight: 300;
-  background-color: crimson;
   padding-left: 22px;
 }
 
