@@ -185,7 +185,7 @@
 
 
         .footer__slider--small {
-
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -213,6 +213,13 @@
             .footer__arrow--rotate {
 
                 transform: rotate(180deg);
+            }
+
+            .slick-next {
+                position: absolute;
+                // background-color: green;
+                right: -20px;
+                bottom: 20px;
             }
         }
 

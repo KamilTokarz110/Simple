@@ -158,6 +158,10 @@
 
         }
 
+        .services__item-image--medium {
+            display: block;
+        }
+
         .services__item-image--large {
             display: none;
         }
@@ -327,6 +331,7 @@
             display: none;
 
         }
+
 
     }
 }
