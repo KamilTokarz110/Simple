@@ -1246,15 +1246,16 @@ html {
     width: 100%;
   }
   .industries__header {
-    height: 72px;
+    height: 67px;
+    margin-bottom: 0px;
   }
   .industries__header .header__title {
     font-size: 1.6rem;
     line-height: 20px;
   }
   .industries__gallery {
-    height: 363px;
-    margin-top: 8px;
+    height: 374px;
+    margin-top: 5px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1270,6 +1271,7 @@ html {
     width: 90px;
   }
   .industries__gallery .gallery__item {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1292,12 +1294,17 @@ html {
     display: block;
   }
   .industries__gallery .gallery__item-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-size: 1.1rem;
     font-weight: 400;
-    text-align: center;
-    height: 115px;
-    line-height: 14px;
-    padding-top: 58px;
+    height: 100%;
+    line-height: 116px;
+    padding-top: 0px;
     white-space: normal;
   }
   .industries__gallery .gallery__text {
