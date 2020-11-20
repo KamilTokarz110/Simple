@@ -176,12 +176,14 @@
         &__header {
 
             margin-top: 0px;
-            height: 57px;
+            height: 58px;
             border-bottom: dotted 1px $main-color;
 
 
             .header__image {
-
+                width: 25px;
+                height: 21px;
+                margin-bottom: 5px;
                 margin-right: 5px;
 
                 &__picture {
@@ -193,6 +195,12 @@
             .header__title {
 
                 font-size: 1.6rem;
+                color: $main-color;
+                // line-height: 33px;
+
+                font-weight: 300;
+                text-transform: uppercase;
+                margin-top: 2px;
 
             }
 
@@ -216,7 +224,7 @@
             height: 347px;
             width: 100%;
 
-            margin-top: 30px;
+            margin-top: 20px;
 
         }
 

@@ -1485,10 +1485,13 @@ html {
   }
   .products__header {
     margin-top: 0px;
-    height: 57px;
+    height: 58px;
     border-bottom: dotted 1px #023A5C;
   }
   .products__header .header__image {
+    width: 25px;
+    height: 21px;
+    margin-bottom: 5px;
     margin-right: 5px;
   }
   .products__header .header__image__picture {
@@ -1497,6 +1500,10 @@ html {
   }
   .products__header .header__title {
     font-size: 1.6rem;
+    color: #023A5C;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 2px;
   }
   .products .products__description {
     display: none;
@@ -1520,7 +1527,7 @@ html {
             justify-content: space-between;
     height: 347px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .products__item--small {
     color: #023A5C;
