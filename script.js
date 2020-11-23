@@ -50,44 +50,6 @@ function next() {
     })(i);
    }
 
-//SLIDER
-
-
-// const slideList = [{
-//     img: "images/bgc_main_1.png",
-// },
-// {
-//     img: "images/bgc_main_2.png",
-// },
-// {
-//     img: "images/bgc_main_3.png",
-// },
-// {
-//     img: "images/bgc_main_4.png",
-// }];
-
-// const image = document.querySelector(".main__about__image");
-// const rectangles = [...document.querySelectorAll(".rectangle__item")];
-// const time = 5000;
-// let active = 0;
-
-// const changeRectangle = ()=>{
-// const activeRec = rectangles.findIndex(rec => rec.classList.contains('rectangle__item--active'))
-// rectangles[activeRec].classList.remove('rectangle__item--active');
-// rectangles[active].classList.add('rectangle__item--active');
-// };
-// const changeSlide = () => {
-//     active++;
-//     if(active === slideList.length){
-//         active =0;
-//     };
-//     image.src = slideList[active].img;
-// changeRectangle();
-
-// };
-// setInterval(changeSlide,time)
-
-
 
 //SIDE_MENU
 arrow.addEventListener("click",function(){

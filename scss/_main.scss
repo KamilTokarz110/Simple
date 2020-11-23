@@ -196,6 +196,7 @@
         // background-image: url(../images/bgc_main.png);
         background-position: 96px 0%;
         position: relative;
+        object-fit: fill;
 
         @media(max-width:$medium-device) {
             // background-image: url(../images/main_bg_768.png);
@@ -212,27 +213,35 @@
 
             opacity: 0;
             position: absolute;
-            max-width: 100%;
-            height: auto;
-            // height: 100%;
-            left: 0px;
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 100%;
+            max-height: 100%;
+
             transition: 0.5s;
 
+
             @media(max-width:$medium-device) {
-                left: 30px;
+                // left: 30px;
             }
 
 
             &-show {
                 opacity: 1;
                 position: absolute;
-                max-width: 100%;
-                height: auto;
-                left: 0px;
+
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 100%;
+                max-height: 100%;
 
                 @media(max-width:$medium-device) {
-                    left: 30px;
-                    top: 0px;
+                    // left: 0px;
+                    // top: 0px;
                 }
 
             }
@@ -771,8 +780,34 @@
             align-items: center;
             height: 428px;
             // background-image: url(../images/bgc_main-320.png);
-            background-size: cover;
-            background-position: -52px 50%;
+            // background-size: cover;
+
+            // background-position: -52px 50%;
+            &__image {
+
+                opacity: 0;
+                position: absolute;
+                position: absolute;
+
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 100%;
+                height: 100%;
+
+                transition: 0.5s;
+
+                &-show {
+                    opacity: 1;
+                    position: absolute;
+
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
 
             .about__content {
                 justify-content: center;
