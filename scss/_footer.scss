@@ -6,6 +6,10 @@
     width: 100%;
     background-color: white;
 
+    // .footer__company__list--medium {
+    //     display: none;
+    // }
+
     &__company__list {
         position: relative;
         display: flex;
@@ -71,13 +75,15 @@
     .footer__slider--small {
         display: none;
     }
+
+
 }
 
 @media screen and (max-width:$medium-device) {
     .footer {
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         height: 110px;
         width: 100%;
         background-color: white;
@@ -102,6 +108,7 @@
         //         }
         //     }
         // }
+
         &__arrow {
             position: absolute;
             width: 20px;
@@ -129,7 +136,19 @@
             }
         }
 
+        .footer__company__list--medium {
+            display: none;
+            // justify-content: center;
+            // align-items: center;
+            // height: 90px;
+            // width: 85%;
+            // margin: 0 auto;
+            // // background-color: green;
+
+        }
+
         .footer__company__list {
+            // display: none;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -141,29 +160,37 @@
         }
 
         .company__item {
-            display: none;
+            display: flex;
             margin-left: 0px;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+
+            margin: 0px 0px 0px 0px;
 
             &--medium {
-                display: flex;
+                display: none;
 
-                align-items: center;
-                justify-content: center;
-                width: 100px;
-                height: 100px;
+                //     align-items: center;
+                //     justify-content: center;
+                //     width: 100px;
+                //     height: 100px;
 
-                margin: 0px 0px 20px 0px;
+                //     margin: 0px 0px 20px 0px;
+                // }
             }
         }
 
 
 
         .company__image {
-            display: none;
-
+            display: flex;
+            max-width: 100%;
+            height: auto;
 
             &--medium {
-                display: flex;
+                display: none;
                 // width: 100%;
             }
 

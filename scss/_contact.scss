@@ -29,11 +29,13 @@
     }
 
     &__branch {
+        // display: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 270px;
         border-bottom: dotted 2px white;
+        // background-color: green;
 
         .branch__item {
             display: flex;
@@ -205,6 +207,7 @@
             font-size: 1.7rem;
             color: white;
             font-weight: 300;
+
 
             padding-left: 22px;
 
